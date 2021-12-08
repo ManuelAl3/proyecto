@@ -1,0 +1,45 @@
+{
+  "preguntas": [
+    {
+      "titulo": "Encuesta de ingreso al programa de estudios de ingeniería en software"
+    },
+    {
+      "id": 1,
+      "question_id": "Escuela de procedencia: "
+    },
+    {
+      "id": 2,
+      "question_id": "Especialidad cursada en tu escuela de procedencia:"
+    },
+    {
+      "id": 3,
+      "question_id": "¿Cómo te enteraste de la Universidad Politécnica de Durango?",
+      "answerRadio": [
+          {
+              "radio1": "Páginas Web",
+              "radio2": "Redes Sociales",
+              "radio3": "Medios de comunicación (televisión, radio, periódico, otro)",
+              "radio4": "Visita guiada programada por mi bachillerato",
+              "radio5": "Pendones",
+              "radio6": "Recomendación de alguien más",
+              "inputOther": "Otro"
+          }
+      ]
+    },
+    {
+      "id":4,
+      "question_id": "¿Qué te motiva a estudiar Ingeniería en Software?",
+      "answerCheckBox": [
+        {
+          "check1": "Diseñar y desarrollar software a la medida y/o genérico de calidad.",
+          "check2": "Diseñar y crear bases de datos y aplicaciones para su manipulación.",
+          "check3": "Gestionar, administrar e implementar proyectos de innovación en el área de software.",
+          "check4": "Proporcionar soporte técnico y estratégico a la infraestructura de tecnologías de información.",
+          "check5": "Integrar nuevas soluciones de software a servicios modernos como el comercio electrónico.",
+          "check6": "Desarrollar investigación en el campo del desarrollo y reingeniería de las tecnologías de la información.",
+          "inputOther": "Otro"
+        }
+      ]
+    }
+  ]
+}

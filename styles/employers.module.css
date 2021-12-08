@@ -1,0 +1,71 @@
+.container {
+    width: 50%;
+    background-color: var(--main-bg-color-box);
+    box-shadow: none;
+    padding: 30px;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    word-wrap: break-word;
+    margin: 20px auto 20px auto;
+    position: relative;
+}
+
+.img {
+    width: 25%;
+    top: 30%;
+    left: 10px;
+    position: absolute;
+    animation: imgTransicion 2.5s ease-out;
+}
+
+.img2 {
+    width: 25%;
+    right: -10px;
+    position: absolute;
+    animation: imgTransicion2 2.5s ease-out;
+}
+
+.imgEmployers {
+    width: 25%;
+}
+
+.imgMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 100%;
+}
+
+
+@keyframes imgTransicion{
+    0%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes imgTransicion2{
+    0%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}

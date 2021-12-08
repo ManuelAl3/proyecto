@@ -1,0 +1,17 @@
+.container {
+    width: 50%;
+    background-color: var(--main-bg-color-box);
+    box-shadow: none;
+    padding: 30px;
+    border-radius: 0.375rem;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    word-wrap: break-word;
+    margin: 20px auto 20px auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+html,
+body {
+  background: var(--bg-body-color);
+  min-height: 100vh;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .drawer-open-none {
+        margin-left: 500px;
+    }
+}
+
+.dreawer-open-nonoe {
+    transition: margin-left .5s ease,margin-right .5s ease;
+}
+
+* {
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+/* Variables globales */
+:root {
+  --navbar-color-background: ;
+  --bg-body-color: linear-gradient(to right, #f0f0f0, #f6f6f6);
+  --main-color: #863f92;
+  --main-bg-color: #863f92;
+  --main-text-color-button: white;
+  --main-bd-color: #863f92;
+  --main-bd-f-color: rgb(134, 63, 146);
+  --main-bd-bt: 2px solid rgb(195, 195, 195);
+  --main-icon-color: #863f9285;
+  --main-icon-color-hover: #863f92c9;
+  --main-icon-tdf: rgb(133, 133, 133);
+}
+
+/* Contenedor registro y login */
+.section-register,
+.section-login {
+    display: flex;
+    height: 100vh;
+}
+
+/* Contenedor del registro y login lado izquierdo */
+.container-register-left,
+.container-login-left {
+    display: flex;
+    background-image: url(../public/images/logo-isw.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -35px;
+    width:60%;
+}
+
+/* Contenedor del registro y login lado derecho */
+.container-register-right,
+.container-login-right {
+    background-color: rgb(255, 255, 255);
+    backdrop-filter:inherit;
+    width: 40%;
+    box-shadow: inset 25px 0px 25px -25px rgba(255, 255, 255, 0.45);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: transicion 1.5s ease-out;
+}
+
+/* Transición en login y registro */
+@keyframes transicion{
+    0%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    50%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0px);
+    }
+}
+
+.container-login-right:hover {
+    transition: 1s;
+    visibility: visible;
+}
+
+.container-register,
+.container-login {
+    width: 85%;
+}
+
+/* Inputs */
+.is-purple{
+    border-color: var(--main-bg-color);
+    border: none;
+    outline: none;
+    border-bottom: var(--main-bd-bt);
+}
+
+.p-character {
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+/* Select */
+.select {
+    border-bottom: 2px solid rgb(195, 195, 195);
+}
+
+/* Check box y radios*/
+.m-rght {
+    margin-right: 10px;
+}
+
+/* Icono */
+i.fas {
+    color: var(--main-icon-color-hover);
+}
+
+/* Botón */
+.button.is-purple {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color-button);
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    letter-spacing: 0.02cm;
+    border: none;
+    outline: none;
+}
+
+button.is-redounded-main {
+    color: rgba(0,0,0,0.5);
+    width: 100%;
+    border: none;
+    font-weight: bolder;
+}
+
+button.is-redounded-main:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.5);
+    border: solid .05px rgba(0, 0, 0, 0.164);
+}
+
+
+.hashtag {
+    color: var(--main-icon-tdf);
+}
+
+.section-login-clic, 
+.section-register-clic {
+    color: var(--main-icon-tdf);
+    padding: 8px;
+    text-align: center;
+}
+
+.section-login-clic a, 
+.section-register-clic a{
+    margin-left: 10px;
+    color: var(--main-color);
+}
+
+/* Codigo hover */
+.hashtag:hover {
+    color: var(--main-color);
+}
+
+input.is-purple:hover {
+    border-bottom: solid var(--main-bg-color) 2px;
+    border-color: var(--main-bg-color);
+}
+
+/* Icono hover */
+i.fas:hover {
+    color: var(--main-icon-color-hover);
+}
+
+select:hover {
+    box-shadow: 0 0 0 0.1rem var(--main-bd-f-color);
+}
+
+/* Boton loguear y registrarse hover */
+.section-login-clic button:hover, 
+.section-register-clic button:hover {
+    color: rgb(133, 133, 133);
+    background: rgb(243, 243, 243); 
+}
+
+.is-purple:focus {
+    border-color: var(--main-bd-color);
+    box-shadow: 0 0 0.125em var(--main-bd-f-color);
+}
+
+.button.is-purple:hover {
+    background-color: rgb(124, 56, 136);
+}
+

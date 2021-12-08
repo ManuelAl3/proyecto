@@ -1,0 +1,125 @@
+.mLeft {
+    margin-left: 100px;
+}
+
+/*.cardStyles {
+    background-color: #5e72e4;
+    padding: 60px;
+    border-radius: 0.375rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}*/
+
+.cardLabel {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.cardStyles {
+    position: relative;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6vh;
+    overflow: hidden;
+    border: 1px solid;
+    border-radius: 0.375rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    transition: .5s;
+    letter-spacing: 1px;
+}
+
+.cardStylesButton {
+    width: 101%;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.125;
+    letter-spacing: 1px;
+    background: #000;
+    -webkit-mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+    mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+    -webkit-mask-size: 2300% 100%;
+    mask-size: 2300% 100%;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    -webkit-animation: ani2 .7s steps(22) forwards;
+    animation: ani2 .7s steps(22) forwards
+}
+
+.cardStylesButton:hover {
+    -webkit-animation: ani .7s steps(22) forwards;
+    animation: ani .7s steps(22) forwards
+}
+
+.mas {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 300;
+    overflow: hidden;
+    top: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+    .mLeft {
+        margin-left: 0px;
+    }
+}
+
+@-webkit-keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0
+    }
+}
+
+@keyframes ani {
+    from {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0
+    }
+
+    to {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0
+    }
+}
+
+@-webkit-keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0
+    }
+}
+
+@keyframes ani2 {
+    from {
+        -webkit-mask-position: 100% 0;
+        mask-position: 100% 0
+    }
+
+    to {
+        -webkit-mask-position: 0 0;
+        mask-position: 0 0
+    }
+}
